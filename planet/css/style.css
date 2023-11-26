@@ -1,0 +1,239 @@
+/* league-spartan-regular - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/league-spartan-v11-latin_latin-ext-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-700 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/league-spartan-v11-latin_latin-ext-700.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+ol li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+image img {
+  width: 100%;
+  display: block;
+}
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  max-width: 1440px;
+  background: #070724;
+  background-image: url("/image/background-oval.svg");
+  background-size: cover;
+  color: #fff;
+}
+
+/* header begin */
+header {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 41px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+  align-items: center;
+  margin-bottom: 126px;
+}
+.logo {
+  width: 109px;
+  color: #fff;
+  font-family: Antonio;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.05px;
+  text-transform: uppercase;
+}
+.menu {
+  width: 665px;
+  display: flex;
+  gap: 33px;
+}
+.menu-link {
+  color: #fff;
+  font-family: Spartan;
+  font-size: 11px;
+  opacity: 0.75;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 227.273% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.menu-link:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: calc(400ms);
+  color: BLACK;
+  border-radius: 8px;
+
+  background-color: aqua;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.image-content {
+  display: flex;
+  justify-content: space-between;
+}
+.planet-information {
+  color: white;
+  width: 350px;
+}
+.planet-image {
+  width: calc(1110px - 350px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  color: #fff;
+  font-family: Antonio;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.subtitle {
+  margin-top: 23px;
+  width: 350px;
+  color: #fff;
+  font-family: Spartan;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.planet-information span {
+  color: #fff;
+  font-family: Spartan;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 178.571% */
+  opacity: 0.5;
+}
+
+.Wikipedia {
+  margin-top: 24px;
+  opacity: 0.5;
+  margin-left: 28px;
+  color: #fff;
+  font-family: Spartan;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.sections {
+  margin-top: 39px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.section {
+  padding: 12px 11px 28px;
+  margin-left: 28px;
+  border: 1px solid #fff;
+  width: 350px;
+  height: 48px;
+  flex-shrink: 0;
+  gap: 28px;
+  color: #fff;
+  font-family: Spartan;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2.571px;
+  text-transform: uppercase;
+}
+
+.section span {
+  opacity: 0.5;
+  color: #fff;
+  font-family: Spartan;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2.571px;
+  text-transform: uppercase;
+  margin-right: 28px;
+  margin-left: 28px;
+}
+
+.active {
+  background-color: #419ebb;
+  opacity: 1;
+}
+.info-content {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.fact {
+  /* margin: 20px; */
+  width: 255px;
+  height: 128px;
+  color: white;
+  border: 1px solid rgb(255, 255, 255, 03);
+  margin-top: 87px;
+}
+.fact-title {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #fff;
+  opacity: 0.5;
+  font-family: Spartan;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 25px; /* 227.273% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.fact-span {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: Antonio;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+}
